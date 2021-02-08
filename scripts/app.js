@@ -1,5 +1,5 @@
 function add (x, y) {
-    return x + y;jasmin
+    return x + y;
 }
 
 function subtract (x, y) {
@@ -10,6 +10,10 @@ function subtract (x, y) {
     }
 }
 
+function divide(x,y){
+    return x / y;
+}
+
 function sum (array) {
 
     const reducer = (total, currentValue) => total + currentValue;
@@ -17,10 +21,14 @@ function sum (array) {
     
 }
 
-function multiply (array) {
-    const reducer = (total, currentValue) => total *= currentValue;
-    return array.reduce(reducer);
+function multiply (x,y) {
+    return x * y;
 }
+
+// function multiply (array) {
+//     const reducer = (total, currentValue) => total *= currentValue;
+//     return array.reduce(reducer);
+// }
 
 function power(x, y) {
     return Math.pow(x,y)
@@ -34,4 +42,8 @@ function factorial(num) {
     } else {
             return (num * factorial(num - 1))
     }
+}
+
+function operator(op,x,y){
+    return op(x,y);
 }
