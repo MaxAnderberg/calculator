@@ -1,3 +1,5 @@
+let tmpValue = "";
+
 function add (x, y) {
     return x + y;
 }
@@ -46,4 +48,24 @@ function factorial(num) {
 
 function operator(op,x,y){
     return op(x,y);
+}
+
+function setValue(value){
+    tmpValue += value;
+    displayValue();
+    console.log(tmpValue)
+}
+
+function displayValue(){
+   return document.getElementById("display").innerHTML = `${getNumber()}`;
+    
+}
+
+function getNumber(){
+    return tmpValue;
+
+}
+
+function resetNumber(){
+    return tmpValue = 0;
 }
