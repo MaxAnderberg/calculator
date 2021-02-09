@@ -51,20 +51,13 @@ function factorial(num) {
 }
 
 function operator(op,x,y){
-    console.log("This is the operator function")
-    console.log("this is x: " + x + " this is y: " + y)
-    console.log("this is the operator: " + op)
     if(op == "add"){
-        console.log(add(parseInt(x),parseInt(y)))
         result = add(parseInt(x),parseInt(y));
     } else if(op == "subtract"){
-        console.log(subtract(parseInt(x),parseInt(y)))
         result = subtract(parseInt(x),parseInt(y));
     } else if(op == "divide"){
-        console.log(divide(parseInt(x),parseInt(y)))
         result = divide(parseInt(x),parseInt(y));
     } else if(op == "multiply"){
-        console.log(multiply(parseInt(x),parseInt(y)))
         result = multiply(parseInt(x),parseInt(y));
     }
     displayResult();
@@ -73,20 +66,17 @@ function operator(op,x,y){
 function setOperator(operator){
     tmpOpertor = operator;
     setXvalue();
-    console.log(operator)
     displayOperator();
 }
 
 function setXvalue(){
     tmpValueX = tmpValue;
-    console.log("This is SetXvalue, valueX: " + tmpValueX + " and this is tmpValue: " + tmpValue)
     resetNumber();
 }
 
 function setValue(value){
     tmpValue += value;
     displayValue();
-    console.log("setValue: " + tmpValue)
 }
 
 function displayResult(){
@@ -102,19 +92,15 @@ function displayValue(){
 }
 
 function getNumber(){
-    console.log("getNumber: " + tmpValue)
     return tmpValue;
 }
 
 function equals(){
-    console.log("equal here " + tmpOpertor + " " + tmpValueX + " " + tmpValue)
-
     operator(tmpOpertor,tmpValueX,tmpValue)
 }
 
 function resetNumber(){
     tmpValue = "";
-    console.log("resetNumber: " + tmpValue)
 }
 
 function reset(){
