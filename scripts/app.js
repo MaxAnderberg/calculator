@@ -1,4 +1,7 @@
 let tmpValue = "";
+let tmpValueX = "";
+let tmpValueY = "";
+let tmpOpertor = "";
 
 function add (x, y) {
     return x + y;
@@ -47,7 +50,21 @@ function factorial(num) {
 }
 
 function operator(op,x,y){
-    return op(x,y);
+    if(op == "add"){
+        console.log(add(parseInt(x),parseInt(y)))
+        return add(x,y);
+    }
+}
+
+function setOperator(operator){
+    tmpOpertor = operator;
+    setXvalue();
+    console.log(operator)
+}
+
+function setXvalue(){
+    tmpValueX = tmpValue;
+    tmpValue = ""
 }
 
 function setValue(value){
@@ -58,14 +75,18 @@ function setValue(value){
 
 function displayValue(){
    return document.getElementById("display").innerHTML = `${getNumber()}`;
-    
 }
 
 function getNumber(){
     return tmpValue;
+}
 
+function equals(){
+    console.log("equal here " + tmpOpertor + " " + tmpValueX, + " " + tmpValue)
+
+    operator(tmpOpertor,tmpValueX,tmpValue)
 }
 
 function resetNumber(){
-    return tmpValue = 0;
+    return tmpValue = "";
 }
