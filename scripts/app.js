@@ -60,11 +60,9 @@ function operator(op,x,y){
         console.log(subtract(parseInt(x),parseInt(y)))
         return subtract(x,y);
     } else if(op == "divide"){
-        console.log(op == "DIVIDE ME DADDY")
         console.log(divide(parseInt(x),parseInt(y)))
         // return divide(x,y);
     } else if(op == "multiply"){
-        console.log("MULTIPLY ME DADDY")
         console.log(multiply(parseInt(x),parseInt(y)))
         return multiply(x,y);
     }
