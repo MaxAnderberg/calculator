@@ -106,7 +106,9 @@ function resetNumber(){
     console.log("resetNumber: " + tmpValue)
 }
 
-function clear(){
+function reset(){
+
+    setValue("");
     tmpValue = "";  
     tmpValueX = "";
     tmpValueY = "";
