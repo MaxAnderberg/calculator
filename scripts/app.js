@@ -74,6 +74,7 @@ function setOperator(operator){
     tmpOpertor = operator;
     setXvalue();
     console.log(operator)
+    displayOperator();
 }
 
 function setXvalue(){
@@ -90,6 +91,10 @@ function setValue(value){
 
 function displayResult(){
     document.getElementById("display-result").innerHTML = `${result}`;
+ }
+
+ function displayOperator(){
+    document.getElementById("display-operator").innerHTML = `${tmpOpertor}`;
  }
 
 function displayValue(){
@@ -119,4 +124,8 @@ function reset(){
     tmpValueX = "";
     tmpValueY = "";
     tmpOpertor = "";
+    result = 0;
+    displayOperator();
+    displayResult();
+    displayValue();
 }
