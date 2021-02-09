@@ -2,6 +2,7 @@ let tmpValue = "";
 let tmpValueX = "";
 let tmpValueY = "";
 let tmpOpertor = "";
+let result = 0;
 
 function add (x, y) {
     return x + y;
@@ -55,17 +56,18 @@ function operator(op,x,y){
     console.log("this is the operator: " + op)
     if(op == "add"){
         console.log(add(parseInt(x),parseInt(y)))
-        return add(x,y);
+        result = add(parseInt(x),parseInt(y));
     } else if(op == "subtract"){
         console.log(subtract(parseInt(x),parseInt(y)))
-        return subtract(x,y);
+        result = subtract(parseInt(x),parseInt(y));
     } else if(op == "divide"){
         console.log(divide(parseInt(x),parseInt(y)))
-        // return divide(x,y);
+        result = divide(parseInt(x),parseInt(y));
     } else if(op == "multiply"){
         console.log(multiply(parseInt(x),parseInt(y)))
-        return multiply(x,y);
+        result = multiply(parseInt(x),parseInt(y));
     }
+    displayResult();
 }
 
 function setOperator(operator){
@@ -85,6 +87,10 @@ function setValue(value){
     displayValue();
     console.log("setValue: " + tmpValue)
 }
+
+function displayResult(){
+    document.getElementById("display-result").innerHTML = `${result}`;
+ }
 
 function displayValue(){
    return document.getElementById("display").innerHTML = `${getNumber()}`;
