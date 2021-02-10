@@ -1,5 +1,6 @@
 body{
     background: rgba(106, 164, 119, .44);
+    font-family: 'Roboto', sans-serif;
 }
 
 .calculator{
@@ -20,13 +21,20 @@ body{
 .main-body{
     width: 520px;
     height: 520px;
-
-
-
     background: #C4C4C4;
     border: 1px solid #000000;
     box-sizing: border-box;
     box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 13px 13px;
+}
+
+#display{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 90px;
+line-height: 105px;
+
+color: #FFFFFF;
 }
 
