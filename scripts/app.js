@@ -70,7 +70,11 @@ function setOperator(operator){
 }
 
 function setXvalue(){
-    tmpValueX = tmpValue;
+    if(result){
+        tmpValueX = result;
+    } else {
+        tmpValueX = tmpValue;
+    }
     resetNumber();
 }
 
@@ -104,7 +108,6 @@ function resetNumber(){
 }
 
 function reset(){
-
     setValue("");
     tmpValue = "";  
     tmpValueX = "";
