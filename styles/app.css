@@ -3,9 +3,16 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+main{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
 .calculator{
     display: flex;
     flex-direction: column;
+    justify-self: right;
 }
 
 .display-container{
