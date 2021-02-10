@@ -15,26 +15,30 @@
             <span id="display-result">0</span>
             <span id="display-operator"></span>
         </section>
-        <section class="button-container">
-            <button value="0" onclick="setValue(this.value)">0</button>
-            <button value="1" onclick="setValue(this.value)">1</button>
-            <button value="2" onclick="setValue(this.value)">2</button>
-            <button value="3" onclick="setValue(this.value)">3</button>
-            <button value="4" onclick="setValue(this.value)">4</button>
-            <button value="5" onclick="setValue(this.value)">5</button>
-            <button value="6" onclick="setValue(this.value)">6</button>
-            <button value="7" onclick="setValue(this.value)">7</button>
-            <button value="8" onclick="setValue(this.value)">8</button>
-            <button value="9" onclick="setValue(this.value)">9</button>
+        <section class="main-body">
+
+            <section class="button-container">
+                <button value="0" onclick="setValue(this.value)">0</button>
+                <button value="1" onclick="setValue(this.value)">1</button>
+                <button value="2" onclick="setValue(this.value)">2</button>
+                <button value="3" onclick="setValue(this.value)">3</button>
+                <button value="4" onclick="setValue(this.value)">4</button>
+                <button value="5" onclick="setValue(this.value)">5</button>
+                <button value="6" onclick="setValue(this.value)">6</button>
+                <button value="7" onclick="setValue(this.value)">7</button>
+                <button value="8" onclick="setValue(this.value)">8</button>
+                <button value="9" onclick="setValue(this.value)">9</button>
+            </section>
+            <section class="operator-container">
+                <button value="add" onclick="setOperator(this.value)">add</button>
+                <button value="subtract" onclick="setOperator(this.value)">subtract</button>
+                <button value="divide" onclick="setOperator(this.value)">divide</button>
+                <button value="multiply" onclick="setOperator(this.value)">multiply</button>
+                <button value="equal" onclick="equals()">=</button>
+                <button onclick="reset()">clear</button>
+            </section>
         </section>
-        <section class="operator-container">
-            <button value="add" onclick="setOperator(this.value)">add</button>
-            <button value="subtract" onclick="setOperator(this.value)">subtract</button>
-            <button value="divide" onclick="setOperator(this.value)">divide</button>
-            <button value="multiply" onclick="setOperator(this.value)">multiply</button>
-            <button value="equal" onclick="equals()">=</button> 
-            <button onclick="reset()">clear</button> 
-        </section>
+
     </section>
     <script src="scripts/app.js"></script>
 </body>
