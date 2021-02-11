@@ -119,6 +119,23 @@ function reset(){
     displayValue();
 }
 
+function negate(){
+    if(!tmpValue){
+        return;
+    } else {
+        const anArray = tmpValue.split("");
+        console.log(anArray)
+        if(anArray[0] === "-"){
+            anArray.shift() // remove the minus sign
+            tmpValue = anArray.join("");
+        } else {
+            anArray.unshift("-"); // add the minus sign
+            tmpValue = anArray.join("");
+        }
+    }
+    displayValue();
+}
+
 window.addEventListener('keydown', function(e) {
     // console.log(e)
     const button = document.querySelector(`button[data-key="${e.keyCode}"]`)
