@@ -118,3 +118,11 @@ function reset(){
     displayResult();
     displayValue();
 }
+
+window.addEventListener('keydown', function(e) {
+    // console.log(e)
+    const button = document.querySelector(`button[data-key="${e.keyCode}"]`)
+    console.log(button)
+    if(!button){return;} // if no key-code match stop function
+    button.click();
+});
