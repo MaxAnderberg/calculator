@@ -7,13 +7,11 @@
 body {
     background: rgba(106, 164, 119, .44);
     font-family: 'Roboto', sans-serif;
-
 }
 
 main {
-display: flex;
-justify-content: center;
-
+    display: flex;
+    justify-content: center;
 }
 
 .calculator {
@@ -31,7 +29,7 @@ justify-content: center;
 
 .display-container {
     width: 400px;
-    /* height: 160px; */
+    height: 140px;
     background: #424242;
     border: 1px solid #000000;
     box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
@@ -53,12 +51,17 @@ justify-content: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 90px;
-    line-height: 105px;
+    /* word break off starts here*/
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 1.5em;
+    line-height: 1.8;
+    /* word break off starts here*/
     color: #FFFFFF;
     text-align: right;
     margin-top: 10%;
     margin-right: 4%;
+    font-size: 4vw;
 }
 
 
