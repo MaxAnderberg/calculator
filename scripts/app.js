@@ -66,7 +66,7 @@ function operator(op,x,y){
 function setOperator(operator){
     tmpOpertor = operator;
     setXvalue();
-    displayOperator();
+    // displayOperator();
 }
 
 function setXvalue(){
@@ -84,7 +84,7 @@ function setValue(value){
 }
 
 function displayResult(){
-    document.getElementById("display-result").innerHTML = `${result}`;
+    document.getElementById("display").innerHTML = `${result}`;
  }
 
  function displayOperator(){
@@ -109,12 +109,12 @@ function resetNumber(){
 
 function reset(){
     setValue("");
-    tmpValue = "";  
+    tmpValue = "0";  
     tmpValueX = "";
     tmpValueY = "";
     tmpOpertor = "";
     result = 0;
-    displayOperator();
+    // displayOperator();
     displayResult();
     displayValue();
 }
