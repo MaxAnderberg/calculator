@@ -11,18 +11,20 @@ body {
 }
 
 main {
-    min-height: 100vh;
-    display: flex;
-    justify-items: center;
-    justify-content: center;
+display: flex;
+justify-content: center;
+
 }
 
 .calculator {
-    
     display: flex;
+    justify-items: center;
+    justify-content: center;
     flex-direction: column;
     justify-self: right;
     width: 400px;
+    min-height: 100vh;
+    bottom: 500px;
 }
 
 
@@ -78,6 +80,7 @@ main {
 button{
     font-family: 'Roboto', sans-serif;
     color: white;
+    font-weight: 400;
     font-size: 45px;
     height: 80px;
     /* width: 80px; */
