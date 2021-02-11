@@ -78,6 +78,7 @@ button{
     height: 80px;
     /* width: 80px; */
     border: 1px solid black;
+    background-color: #9C9797;
 }
 
 #zero{
@@ -88,6 +89,13 @@ button{
     border-bottom-left-radius: 13px;
 }
 
+#divition, #multiplication, #subtraction, #addition, #equal{
+    background: #E3A400;
+}
+
+#negate, #percent, #clear{
+    background-color: #5C5C5C;
+}
 
 #divition{
     grid-column-start: 4;
