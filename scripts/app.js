@@ -52,6 +52,10 @@ function factorial(num) {
     }
 }
 
+function percent(){
+
+}
+
 function round(num){
     result = Math.round((num + Number.EPSILON) * 10000000) / 10000000
 }
@@ -162,5 +166,17 @@ window.addEventListener('keydown', function(e) {
         }
     } else {
         button.click();
+        button.classList.add("scale-button")
     } 
 });
+
+function removeTransition(e){
+    if(e.propertyName !== "transform"){return;}
+    this.classList.remove("scale-button")
+}
+
+const keys = document.querySelectorAll('.key')
+keys.forEach(key => key.addEventListener("transitionend", removeTransition))
+/* 
+
+*/

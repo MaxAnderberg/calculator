@@ -80,7 +80,16 @@ main {
     grid-template-rows: repeat(5), 1fr;
 }
 
+.scale-button{
+
+    transform:scale(1.05);
+    /* background-color: gainsboro; */
+    border-color: gainsboro;
+    box-shadow: 0 0 10px black;
+}
+
 button{
+    transition: all 0.07s;
     font-family: 'Roboto', sans-serif;
     color: white;
     font-weight: 400;
