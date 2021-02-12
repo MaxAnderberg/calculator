@@ -53,16 +53,14 @@ function factorial(num) {
 }
 
 function operator(op,x,y){
-    console.log(x, y)
     if(op == "add"){
-        result = add(parseInt(x),parseInt(y));
+        result = add(parseFloat(x),parseFloat(y));
     } else if(op == "subtract"){
-        result = subtract(parseInt(x),parseInt(y));
-        console.log(result)
-    } else if(op == "divide"){
-        result = divide(parseInt(x),parseInt(y));
-    } else if(op == "multiply"){
-        result = multiply(parseInt(x),parseInt(y));
+        result = subtract(parseFloat(x),parseFloat(y));
+    } else if ("divide"){
+        result = divide(parseFloat(x),parseFloat(y));
+    }else if(op == "multiply"){
+        result = multiply(parseFloat(x),parseFloat(y));
     }
     displayResult();
 }
