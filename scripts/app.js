@@ -23,10 +23,14 @@ function divide(x,y){
 }
 
 function sum (array) {
-
     const reducer = (total, currentValue) => total + currentValue;
-    return array.reduce(reducer,0);
-    
+    return array.reduce(reducer,0);    
+}
+
+function percentage(){
+    console.log("hello")
+    result = (tmpValueX/100);
+    displayResult();
 }
 
 function multiply (x,y) {
@@ -45,10 +49,6 @@ function factorial(num) {
     } else {
             return (num * factorial(num - 1))
     }
-}
-
-function percent(){
-
 }
 
 function round(num){
@@ -73,7 +73,6 @@ function operator(op,x,y){
 function setOperator(operator){
     tmpOpertor = operator;
     setXvalue();
-    // displayOperator();
 }
 
 function setXvalue(){
@@ -125,9 +124,10 @@ function reset(){
     displayResult();
     displayValue();
     document.getElementById("display").innerHTML = `0`;
-
 }
 
+// turn the value into a negative number or revert it back to positive
+// uses the current display value to update the display in real time
 function negate(){
     if(!tmpValue){
         return;
@@ -174,6 +174,3 @@ function removeTransition(e){
 
 const keys = document.querySelectorAll('.key')
 keys.forEach(key => key.addEventListener("transitionend", removeTransition))
-/* 
-
-*/
