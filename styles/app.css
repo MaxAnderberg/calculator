@@ -80,6 +80,9 @@ main {
     grid-template-rows: repeat(5), 1fr;
 }
 
+button:focus{
+    outline:0;
+}
 
 
 .scale-button, button:hover{
