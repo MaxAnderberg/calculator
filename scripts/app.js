@@ -126,8 +126,7 @@ function reset(){
     document.getElementById("display").innerHTML = `0`;
 }
 
-// turn the value into a negative number or revert it back to positive
-// uses the current display value to update the display in real time
+// turns the value in the display to negative or back to positive if the display value already contains '-'
 function negate(){
     if(!tmpValue){
         return;
