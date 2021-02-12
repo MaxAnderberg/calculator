@@ -56,13 +56,14 @@ function round(num){
 }
 
 function operator(op,x,y){
+    console.log(op)
     if(op == "add"){
         result = add(parseFloat(x),parseFloat(y));
-    } else if(op == "subtract"){
+    } else if (op == "subtract"){
         result = subtract(parseFloat(x),parseFloat(y));
-    } else if ("divide"){
+    } else if ( op == "divide"){
         result = divide(parseFloat(x),parseFloat(y));
-    }else if(op == "multiply"){
+    } else if (op == "multiply"){
         result = multiply(parseFloat(x),parseFloat(y));
     }
     round(result);
