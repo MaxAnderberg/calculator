@@ -52,6 +52,10 @@ function factorial(num) {
     }
 }
 
+function round(num){
+    result = Math.round((num + Number.EPSILON) * 10000000) / 10000000
+}
+
 function operator(op,x,y){
     if(op == "add"){
         result = add(parseFloat(x),parseFloat(y));
@@ -62,6 +66,7 @@ function operator(op,x,y){
     }else if(op == "multiply"){
         result = multiply(parseFloat(x),parseFloat(y));
     }
+    round(result);
     displayResult();
 }
 
