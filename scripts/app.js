@@ -146,9 +146,21 @@ function negate(){
 }
 
 window.addEventListener('keydown', function(e) {
-    // console.log(e)
+
     const button = document.querySelector(`button[data-key="${e.keyCode}"]`)
-    console.log(button)
+
     if(!button){return;} // if no key-code match stop function
-    button.click();
+
+    if(button.attributes[1].value == "188"){
+        console.log("this is it broo")
+        if(tmpValue.includes(".")){
+            console.log("YO")
+            const comma = button;
+            comma.disabled;
+        } else {
+            button.click();
+        }
+    } else {
+        button.click();
+    } 
 });
