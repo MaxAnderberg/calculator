@@ -109,7 +109,7 @@ function resetNumber(){
 
 function reset(){
     setValue("");
-    tmpValue = "0";  
+    tmpValue = "";
     tmpValueX = "";
     tmpValueY = "";
     tmpOpertor = "";
@@ -117,6 +117,8 @@ function reset(){
     // displayOperator();
     displayResult();
     displayValue();
+    document.getElementById("display").innerHTML = `0`;
+
 }
 
 function negate(){
