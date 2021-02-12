@@ -9,7 +9,9 @@ function add (x, y) {
 }
 
 function subtract (x, y) {
-    if(x > y){
+    if(x < 0){
+        return x - y
+    } else if(x > y){
             return x - y;
     } else {
             return y - x;
@@ -51,10 +53,12 @@ function factorial(num) {
 }
 
 function operator(op,x,y){
+    console.log(x, y)
     if(op == "add"){
         result = add(parseInt(x),parseInt(y));
     } else if(op == "subtract"){
         result = subtract(parseInt(x),parseInt(y));
+        console.log(result)
     } else if(op == "divide"){
         result = divide(parseInt(x),parseInt(y));
     } else if(op == "multiply"){
