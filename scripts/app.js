@@ -33,11 +33,6 @@ function multiply (x,y) {
     return x * y;
 }
 
-// function multiply (array) {
-//     const reducer = (total, currentValue) => total *= currentValue;
-//     return array.reduce(reducer);
-// }
-
 function power(x, y) {
     return Math.pow(x,y)
 }
