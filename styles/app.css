@@ -82,7 +82,7 @@ main {
 
 .scale-button{
 
-    transform:scale(1.05);
+    transform:scale(1.01);
     /* background-color: gainsboro; */
     border-color: gainsboro;
     box-shadow: 0 0 10px black;
