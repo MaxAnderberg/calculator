@@ -163,6 +163,7 @@ window.addEventListener('keydown', function(e) {
             comma.disabled;
         } else {
             button.click();
+            button.classList.add("scale-button")
         }
     } else {
         button.click();

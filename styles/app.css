@@ -80,10 +80,11 @@ main {
     grid-template-rows: repeat(5), 1fr;
 }
 
-.scale-button{
+
+
+.scale-button, button:hover{
 
     transform:scale(1.01);
-    /* background-color: gainsboro; */
     border-color: gainsboro;
     box-shadow: 0 0 10px black;
 }
