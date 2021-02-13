@@ -1,7 +1,4 @@
-let tmpValue = "";
-let tmpValueX = "";
-let tmpValueY = "";
-let tmpOpertor = "";
+let tmpValue = "", tmpValueX = "", tmpValueY = "", tmpOpertor = "";
 let result = 0;
 
 function add (x, y) {
@@ -46,10 +43,12 @@ function factorial(num) {
     }
 }
 
+// rounds the number
 function round(num){
     result = Math.round((num + Number.EPSILON) * 10000000) / 10000000
 }
 
+// calls the appropriate operator based on choosen operator
 function operator(op,x,y){
     console.log(op)
     if(op == "add"){
@@ -64,7 +63,7 @@ function operator(op,x,y){
     round(result);
     displayResult();
 }
-
+ 
 function setOperator(operator){
     tmpOpertor = operator;
     setXvalue();
@@ -79,6 +78,7 @@ function setXvalue(){
     resetNumber();
 }
 
+// adds the value selected value in the calculator and update the display with the current value
 function setValue(value){
     tmpValue += value;
     displayValue();
@@ -135,6 +135,7 @@ function negate(){
     displayValue();
 }
 
+// add event listeners to all the buttons, and the css scale-button class  
 window.addEventListener('keydown', function(e) {
 
     const button = document.querySelector(`button[data-key="${e.keyCode}"]`)
@@ -157,10 +158,12 @@ window.addEventListener('keydown', function(e) {
     } 
 });
 
+// removes the scale-button class when the transform is done
 function removeTransition(e){
     if(e.propertyName !== "transform"){return;}
     this.classList.remove("scale-button")
 }
 
+// add transitionend event listener to remove the scale-down class
 const keys = document.querySelectorAll('.key')
 keys.forEach(key => key.addEventListener("transitionend", removeTransition))
