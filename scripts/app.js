@@ -36,10 +36,6 @@ function multiply (x,y) {
     return x * y;
 }
 
-function power(x, y) {
-    return Math.pow(x,y)
-}
-
 function factorial(num) {
     if(num < 0){
             return -1;
