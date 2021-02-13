@@ -109,7 +109,6 @@ function resetNumber(){
 }
 
 function reset(){
-    setValue("");
     tmpValue = "";
     tmpValueX = "";
     tmpValueY = "";
