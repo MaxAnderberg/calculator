@@ -115,7 +115,6 @@ function reset(){
     tmpValueY = "";
     tmpOpertor = "";
     result = 0;
-    // displayOperator();
     displayResult();
     displayValue();
     document.getElementById("display").innerHTML = `0`;
