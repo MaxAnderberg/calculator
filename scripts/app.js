@@ -28,7 +28,6 @@ function sum (array) {
 }
 
 function percentage(){
-    console.log("hello")
     result = (tmpValueX/100);
     displayResult();
 }
@@ -91,10 +90,6 @@ function setValue(value){
 
 function displayResult(){
     document.getElementById("display").innerHTML = `${result}`;
- }
-
- function displayOperator(){
-    document.getElementById("display-operator").innerHTML = `${tmpOpertor}`;
  }
 
 function displayValue(){
