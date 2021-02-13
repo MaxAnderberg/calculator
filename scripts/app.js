@@ -92,6 +92,7 @@ function displayResult(){
     document.getElementById("display").innerHTML = `${result}`;
  }
 
+ // display the current value
 function displayValue(){
    return document.getElementById("display").innerHTML = `${getNumber()}`;
 }
@@ -108,6 +109,7 @@ function resetNumber(){
     tmpValue = "";
 }
 
+// reset the calculator
 function reset(){
     tmpValue = "";
     tmpValueX = "";
