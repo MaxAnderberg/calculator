@@ -142,10 +142,10 @@ window.addEventListener('keydown', function(e) {
 
     if(!button){return;} // if no key-code match stop function
 
+    // if the button pressed is comma
     if(button.attributes[1].value == "188"){
-        console.log("this is it broo")
+        // and the displayed value already contains a dot disable the button
         if(tmpValue.includes(".")){
-            console.log("YO")
             const comma = button;
             comma.disabled;
         } else {
