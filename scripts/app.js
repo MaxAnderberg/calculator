@@ -1,4 +1,4 @@
-let tmpValue = "", tmpValueX = "", tmpValueY = "", tmpOpertor = "";
+let tmpValue = "", tmpValueX = "", tmpOpertor = "";
 let result = 0;
 
 function add (x, y) {
@@ -109,7 +109,6 @@ function resetNumber(){
 function reset(){
     tmpValue = "";
     tmpValueX = "";
-    tmpValueY = "";
     tmpOpertor = "";
     result = 0;
     displayResult();
